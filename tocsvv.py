@@ -27,7 +27,7 @@ for file in (os.listdir(json_dir)):
 
     if file_extension == ".json":
 
-        if os.path.isfile(f"{json_dir}//{file}"):
+        if os.path.isfile(f"{_type}//{file}_converted.{_type}"):
             print(f"Skipping {file} - File already exists.")
             continue
 
